@@ -1,0 +1,19 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~Kp" : \b [double] Kp in PID min: 0.0, default: 1.5, max: 10.0
+- \b "~Ki" : \b [double] Ki in PID min: 0.0, default: 0.3, max: 10.0
+- \b "~Kd" : \b [double] Kd in PID min: 0.0, default: 0.2, max: 10.0
+- \b "~linear_max" : \b [double] speed in limit min: 0.0, default: 0.4, max: 1.0
+- \b "~angular_max" : \b [double] speed in limit min: 0.0, default: 2.0, max: 5.0
+- \b "~linear_min" : \b [double] speed in limit min: 0.0, default: 0.0, max: 1.0
+- \b "~angular_min" : \b [double] speed in limit min: 0.0, default: 0.0, max: 5.0
+- \b "~joint1" : \b [int] joint1 in arm min: 0, default: 90, max: 180
+- \b "~joint2" : \b [int] joint2 in arm min: 0, default: 145, max: 180
+- \b "~joint3" : \b [int] joint3 in arm min: 0, default: 0, max: 180
+- \b "~joint4" : \b [int] joint4 in arm min: 0, default: 0, max: 180
+- \b "~joint5" : \b [int] joint5 in arm min: 0, default: 90, max: 270
+- \b "~joint6" : \b [int] joint6 in arm min: 30, default: 30, max: 180
+- \b "~SetArmjoint" : \b [bool] SetArmjoint min: False, default: False, max: True
+

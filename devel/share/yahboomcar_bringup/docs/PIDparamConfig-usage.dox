@@ -1,0 +1,20 @@
+\subsubsection usage Usage
+\verbatim
+<node name="driver_node" pkg="yahboomcar_bringup" type="driver_node">
+  <param name="Kp" type="double" value="1.5" />
+  <param name="Ki" type="double" value="0.3" />
+  <param name="Kd" type="double" value="0.2" />
+  <param name="linear_max" type="double" value="0.4" />
+  <param name="angular_max" type="double" value="2.0" />
+  <param name="linear_min" type="double" value="0.0" />
+  <param name="angular_min" type="double" value="0.0" />
+  <param name="joint1" type="int" value="90" />
+  <param name="joint2" type="int" value="145" />
+  <param name="joint3" type="int" value="0" />
+  <param name="joint4" type="int" value="0" />
+  <param name="joint5" type="int" value="90" />
+  <param name="joint6" type="int" value="30" />
+  <param name="SetArmjoint" type="bool" value="False" />
+</node>
+\endverbatim
+

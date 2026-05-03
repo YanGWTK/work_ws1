@@ -1,0 +1,8 @@
+prefix=/home/jetson/yahboomcar_ws/install
+
+Name: armaction
+Description: Description of armaction
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

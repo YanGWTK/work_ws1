@@ -1,0 +1,8 @@
+prefix=/home/jetson/yahboomcar_ws/install
+
+Name: arm_autopilot
+Description: Description of arm_autopilot
+Version: 0.0.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: 

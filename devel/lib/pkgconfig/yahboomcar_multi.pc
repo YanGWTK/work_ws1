@@ -1,0 +1,8 @@
+prefix=/home/jetson/yahboomcar_ws/devel
+
+Name: yahboomcar_multi
+Description: Description of yahboomcar_multi
+Version: 0.0.0
+Cflags: -I/home/jetson/yahboomcar_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: 

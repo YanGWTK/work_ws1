@@ -1,0 +1,8 @@
+prefix=/home/jetson/yahboomcar_ws/devel
+
+Name: learn_action
+Description: Description of learn_action
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

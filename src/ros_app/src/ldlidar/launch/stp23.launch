@@ -1,0 +1,13 @@
+<launch>
+<!-- ldldiar message publisher node -->
+ <node name="STP23" pkg="ldlidar" type="stp23_rosnode" output="screen" >
+  <param name="product_name" value="LDLiDAR_STP23"/>
+  <param name="topic_name" value="laser"/>
+  <param name="port_name" value ="/dev/ttyUSB0"/>
+  <param name="port_baudrate" value ="921600"/>
+  <param name="frame_id" value="base_laser"/>
+ </node>
+ <!-- publisher tf transform, parents frame is base_link, child frame is base_laser -->
+ <!-- args="x y z yaw pitch roll parents_frame_id child_frame_id period_in_ms"-->
+ <node name="base_to_laser_stp23" pkg="tf" type="static_transform_publisher"  args="0.0 0.0 0.18 0 0.0 0.0 base_link base_laser 100"/>
+</launch>

@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: yahboomcar_description
+    relative_path: urdf/yahboomcar_X3plus.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/yahboomcar_X3plus.srdf
+  CONFIG:
+    author_name: 2950012596
+    author_email: 2950012596@qq.com
+    generated_timestamp: 1760874629

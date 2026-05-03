@@ -1,0 +1,20 @@
+\subsubsection parameters ROS parameters
+
+Reads and maintains the following parameters on the ROS server
+
+- \b "~Calibration" : \b [bool] color calibration min: False, default: False, max: True
+- \b "~Color" : \b [int] A size parameter which is edited via an enum min: 0, default: 0, max: 3
+- \b "~Hmin" : \b [int] Hmin in HSV min: 0, default: 0, max: 180
+- \b "~Smin" : \b [int] Smin in HSV min: 0, default: 85, max: 255
+- \b "~Vmin" : \b [int] Vmin in HSV min: 0, default: 126, max: 255
+- \b "~Hmax" : \b [int] Hmax in HSV min: 0, default: 9, max: 180
+- \b "~Smax" : \b [int] Smax in HSV min: 0, default: 253, max: 255
+- \b "~Vmax" : \b [int] Vmax in HSV min: 0, default: 255, max: 255
+- \b "~scale" : \b [int] scale min: 0, default: 1000, max: 1000
+- \b "~Kp" : \b [double] Kp in PID min: 0.0, default: 30.0, max: 100.0
+- \b "~Ki" : \b [double] Ki in PID min: 0.0, default: 0.0, max: 100.0
+- \b "~Kd" : \b [double] Kd in PID min: 0.0, default: 60.0, max: 100.0
+- \b "~linear" : \b [double] linear min: 0.0, default: 0.25, max: 1.0
+- \b "~LaserAngle" : \b [int] LaserAngle min: 10, default: 30, max: 90
+- \b "~ResponseDist" : \b [double] ResponseDist min: 0.0, default: 0.55, max: 8.0
+

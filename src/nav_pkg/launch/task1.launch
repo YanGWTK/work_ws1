@@ -1,0 +1,27 @@
+<launch>
+    <!-- <include file="$(find yahboomcar_nav)/launch/laser_astrapro_bringup.launch" /> -->
+
+    <!-- <include file="$(find yahboomcar_nav)/launch/yahboomcar_navigation.launch">
+        <arg name="use_rviz" value="false" />
+        <arg name="map" value="mytest_map" />
+    </include> -->
+      <include file="$(find easy_handeye)/launch/publish.launch">
+        <arg name="namespace_prefix" value="yahboom_handeye"/>
+        <arg name="eye_on_hand" value="false"/>
+      </include>
+    <node pkg="nav_pkg" type="arm_node.py" name="arm_grasp_service_node" output="screen" 
+          launch-prefix="bash -c 'sleep 3.0; $0 $@' " />
+
+
+
+    <node pkg="nav_pkg" type="taskmain.py" name="ultimate_smach_controller" output="screen" 
+          launch-prefix="bash -c 'sleep 3.0; $0 $@' " />
+
+    <node pkg="nav_pkg" type="auto_aim2.py" name="aruco_pid_align_node" output="screen" 
+          launch-prefix="bash -c 'sleep 3.0; $0 $@' " />
+
+    <node pkg="nav_pkg" type="scan.py" name="aruco_search_node" output="screen" 
+          launch-prefix="bash -c 'sleep 3.0; $0 $@' " />
+    <node pkg="nav_pkg" type="auto_aim.py" name="color_pid_align_node" output="screen" 
+          launch-prefix="bash -c 'sleep 3.0; $0 $@' " />
+</launch>

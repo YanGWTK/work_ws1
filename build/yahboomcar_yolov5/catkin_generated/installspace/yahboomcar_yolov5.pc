@@ -1,0 +1,8 @@
+prefix=/home/jetson/yahboomcar_ws/install
+
+Name: yahboomcar_yolov5
+Description: Description of yahboomcar_yolov5
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/jetson/yahboomcar_ws/devel
+
+Name: yahboomcar_visual
+Description: Description of yahboomcar_visual
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
